@@ -7,10 +7,10 @@ export default function styleConstructor(theme={}) {
     base: {
       width: 32,
       height: 32,
+      justifyContent: 'center',
       alignItems: 'center'
     },
     text: {
-      marginTop: 4,
       fontSize: appStyle.textDayFontSize,
       fontFamily: appStyle.textDayFontFamily,
       fontWeight: '300',
