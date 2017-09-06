@@ -28,7 +28,8 @@ export default function styleConstructor(theme={}) {
       color: appStyle.todayTextColor
     },
     selectedText: {
-      color: appStyle.selectedDayTextColor
+      color: appStyle.selectedDayTextColor,
+      ...appStyle.selectedDayTextStyles
     },
     disabledText: {
       color: appStyle.textDisabledColor

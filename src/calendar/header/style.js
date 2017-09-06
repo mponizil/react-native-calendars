@@ -9,14 +9,16 @@ export default function(theme={}) {
       justifyContent: 'space-between',
       paddingLeft: 10,
       paddingRight: 10,
-      alignItems: 'center'
+      alignItems: 'center',
+      ...appStyle.headerStyles
     },
     monthText: {
       fontSize: appStyle.textMonthFontSize,
       fontFamily: appStyle.textMonthFontFamily,
       fontWeight: '300',
       color: appStyle.monthTextColor,
-      margin: 10
+      margin: 10,
+      ...appStyle.monthTextStyles
     },
     arrow: {
       padding: 10
@@ -34,7 +36,8 @@ export default function(theme={}) {
     week: {
       marginTop: 7,
       flexDirection: 'row',
-      justifyContent: 'space-around'
+      justifyContent: 'space-around',
+      ...appStyle.weekStyles
     },
     dayHeader: {
       marginTop: 2,
@@ -43,7 +46,8 @@ export default function(theme={}) {
       textAlign: 'center',
       fontSize: appStyle.textDayHeaderFontSize,
       fontFamily: appStyle.textDayHeaderFontFamily,
-      color: appStyle.textSectionTitleColor
+      color: appStyle.textSectionTitleColor,
+      ...appStyle.dayHeaderStyles
     }
   });
 }
